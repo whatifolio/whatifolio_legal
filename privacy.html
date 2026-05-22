@@ -43,7 +43,7 @@
           Whatifolio does not require an account. We use a small amount of technical and calculation data to make the
           app work, enforce free limits, restore purchases, and provide support.
         </p>
-        <p class="meta">Effective date: May 13, 2026</p>
+        <p class="meta">Effective date: May 22, 2026</p>
       </section>
 
       <section class="section">
@@ -51,6 +51,11 @@
         <p>Whatifolio may process the following information when you use the app:</p>
         <ul>
           <li>Anonymous app install identifier used as a support ID and RevenueCat app user ID.</li>
+          <li>
+            A hidden anti-abuse device identifier used to enforce free calculation limits across reinstall attempts. On
+            Android, this may use a platform-scoped Android app identifier. On iOS, this may use a secure local
+            identifier stored by the app.
+          </li>
           <li>Device timezone, used to reset monthly free calculations in your local month.</li>
           <li>Calculation inputs such as investment amount, selected asset, and selected year.</li>
           <li>Free calculation usage, entitlement status, and subscription-related metadata.</li>
@@ -64,7 +69,8 @@
         <p>
           Whatifolio does not ask for your name, email address, contacts, precise location, financial account
           credentials, brokerage account, bank account, or portfolio holdings. The app does not allow deposits,
-          withdrawals, trading, or brokerage activity.
+          withdrawals, trading, or brokerage activity. Whatifolio does not use collected identifiers for advertising
+          tracking or cross-app tracking.
         </p>
       </section>
 
@@ -84,8 +90,17 @@
           <li>To enforce free usage limits and unlock Whatifolio Unlimited features.</li>
           <li>To restore purchases and keep subscription access in sync.</li>
           <li>To provide support when you share your in-app Support ID.</li>
-          <li>To monitor reliability, prevent abuse, and protect the backend service.</li>
+          <li>To monitor reliability, enforce fair free usage limits, prevent abuse, and protect the backend service.</li>
         </ul>
+      </section>
+
+      <section class="section">
+        <h2>Anti-abuse identifiers</h2>
+        <p>
+          Whatifolio may send a hidden device key to the backend to help prevent repeated free-limit resets through app
+          reinstall attempts. The backend does not store the raw device key. It stores only a server-side cryptographic
+          hash used for monthly free-limit enforcement and service protection.
+        </p>
       </section>
 
       <section class="section">
