@@ -40,10 +40,11 @@
         <p class="eyebrow">Privacy Policy</p>
         <h1>Your data stays minimal.</h1>
         <p class="summary">
-          Whatifolio does not require an account. We use a small amount of technical and calculation data to make the
-          app work, enforce free limits, restore purchases, and provide support.
+          Whatifolio keeps data collection limited. We use a small amount of technical, account, purchase, and
+          calculation data to make the app work, protect welcome whatifs from abuse, restore purchases, and provide
+          support.
         </p>
-        <p class="meta">Effective date: May 22, 2026</p>
+        <p class="meta">Effective date: May 28, 2026</p>
       </section>
 
       <section class="section">
@@ -52,13 +53,18 @@
         <ul>
           <li>Anonymous app install identifier used as a support ID and RevenueCat app user ID.</li>
           <li>
-            A hidden anti-abuse device identifier used to enforce free calculation limits across reinstall attempts. On
+            A hidden anti-abuse device identifier used to protect welcome whatifs across reinstall attempts. On
             Android, this may use a platform-scoped Android app identifier. On iOS, this may use a secure local
             identifier stored by the app.
           </li>
-          <li>Device timezone, used to reset monthly free calculations in your local month.</li>
+          <li>
+            Apple or Google sign-in information when you choose to sign in or when sign-in is required before a
+            purchase. The backend stores the sign-in provider and a server-side cryptographic hash of the provider
+            account identifier, not your raw Apple or Google account identifier.
+          </li>
+          <li>Device timezone, used for backend consistency and legacy usage-period compatibility.</li>
           <li>Calculation inputs such as investment amount, selected asset, and selected year.</li>
-          <li>Free calculation usage, entitlement status, and subscription-related metadata.</li>
+          <li>Whatif wallet balance, wallet ledger activity, entitlement status, and purchase-related metadata.</li>
           <li>Network information such as IP address, used for basic anti-abuse and backend security.</li>
           <li>Basic technical logs needed to operate and protect the backend service.</li>
         </ul>
@@ -67,7 +73,7 @@
       <section class="section">
         <h2>Information we do not collect</h2>
         <p>
-          Whatifolio does not ask for your name, email address, contacts, precise location, financial account
+          Whatifolio does not use or store your name, email address, contacts, precise location, financial account
           credentials, brokerage account, bank account, or portfolio holdings. The app does not allow deposits,
           withdrawals, trading, or brokerage activity. Whatifolio does not use collected identifiers for advertising
           tracking or cross-app tracking.
@@ -75,11 +81,11 @@
       </section>
 
       <section class="section">
-        <h2>Purchases and subscriptions</h2>
+        <h2>Purchases and paid access</h2>
         <p>
           Purchases are processed by Apple App Store or Google Play billing. Whatifolio does not collect or store your
-          payment card details. RevenueCat is used to manage purchase status, subscriptions, lifetime access, restore
-          purchases, and entitlement webhooks.
+          payment card details. RevenueCat is used to manage purchase status, consumable whatif packs, Lifetime
+          Unlimited access, restore purchases, and entitlement webhooks.
         </p>
       </section>
 
@@ -87,10 +93,10 @@
         <h2>How we use information</h2>
         <ul>
           <li>To calculate educational what-if investment estimates.</li>
-          <li>To enforce free usage limits and unlock Whatifolio Unlimited features.</li>
-          <li>To restore purchases and keep subscription access in sync.</li>
+          <li>To grant welcome whatifs, spend whatifs on calculations, and unlock Lifetime Unlimited access.</li>
+          <li>To restore purchases and keep paid access in sync.</li>
           <li>To provide support when you share your in-app Support ID.</li>
-          <li>To monitor reliability, enforce fair free usage limits, prevent abuse, and protect the backend service.</li>
+          <li>To monitor reliability, protect welcome whatifs from abuse, prevent misuse, and protect the backend service.</li>
         </ul>
       </section>
 
@@ -99,7 +105,7 @@
         <p>
           Whatifolio may send a hidden device key to the backend to help prevent repeated free-limit resets through app
           reinstall attempts. The backend does not store the raw device key. It stores only a server-side cryptographic
-          hash used for monthly free-limit enforcement and service protection.
+          hash used for welcome-grant protection and service protection.
         </p>
       </section>
 
@@ -108,7 +114,8 @@
         <p>Whatifolio may use the following service providers:</p>
         <ul>
           <li>Apple App Store and Google Play for billing and purchase processing.</li>
-          <li>RevenueCat for subscription and entitlement management.</li>
+          <li>Apple and Google sign-in services when you choose to sign in or when sign-in is required before purchase.</li>
+          <li>RevenueCat for purchase, entitlement, and whatif-pack management.</li>
           <li>Backend hosting providers for the Whatifolio API.</li>
           <li>Market data providers such as Alpha Vantage for market data snapshots.</li>
         </ul>
@@ -117,9 +124,9 @@
       <section class="section">
         <h2>Data retention</h2>
         <p>
-          We keep anonymous usage, entitlement, and technical records for as long as needed to operate the app, enforce
-          limits, provide support, comply with store requirements, and protect the service. Because the MVP does not
-          require accounts, support requests should include the in-app Support ID when possible.
+          We keep anonymous usage, account-link, wallet, purchase, entitlement, and technical records for as long as
+          needed to operate the app, restore purchases, provide support, comply with store requirements, and protect the
+          service. Support requests should include the in-app Support ID when possible.
         </p>
       </section>
 
