@@ -58,9 +58,10 @@
             identifier stored by the app.
           </li>
           <li>
-            Apple or Google sign-in information when you choose to sign in or when sign-in is required before a
-            purchase. The backend stores the sign-in provider and a server-side cryptographic hash of the provider
-            account identifier, not your raw Apple or Google account identifier.
+            Apple or Google sign-in information when you choose to sign in. Sign-in is optional and is used to help keep
+            purchases and whatifs available across supported devices. The backend stores the sign-in provider and a
+            server-side cryptographic hash of the provider account identifier, not your raw Apple or Google account
+            identifier.
           </li>
           <li>Device timezone, used for backend consistency and legacy usage-period compatibility.</li>
           <li>Calculation inputs such as investment amount, selected asset, and selected year.</li>
@@ -114,7 +115,7 @@
         <p>Whatifolio may use the following service providers:</p>
         <ul>
           <li>Apple App Store and Google Play for billing and purchase processing.</li>
-          <li>Apple and Google sign-in services when you choose to sign in or when sign-in is required before purchase.</li>
+          <li>Apple and Google sign-in services when you choose to sign in.</li>
           <li>RevenueCat for purchase, entitlement, and whatif-pack management.</li>
           <li>Backend hosting providers for the Whatifolio API.</li>
           <li>Market data providers such as Alpha Vantage for market data snapshots.</li>
@@ -127,6 +128,16 @@
           We keep anonymous usage, account-link, wallet, purchase, entitlement, and technical records for as long as
           needed to operate the app, restore purchases, provide support, comply with store requirements, and protect the
           service. Support requests should include the in-app Support ID when possible.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Account deletion</h2>
+        <p>
+          If you choose to sign in with Apple or Google, you can delete your Whatifolio account from inside the app.
+          Account deletion removes the Whatifolio account link, active app sessions, wallet records, and app account
+          data stored by our backend. Store purchase records remain managed by Apple App Store, Google Play, and
+          RevenueCat as needed for billing, receipts, refunds, restore purchase, fraud prevention, and legal compliance.
         </p>
       </section>
 
