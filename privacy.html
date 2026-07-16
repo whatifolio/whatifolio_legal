@@ -69,10 +69,15 @@
           <li>Network information such as IP address, used for basic anti-abuse and backend security.</li>
           <li>Basic technical logs needed to operate and protect the backend service.</li>
           <li>
-            App Events sent to Meta Platforms, including app installation or activation, successful account
-            registration and sign-in method, successful purchase price, currency and product identifier, and whether a
-            what-if calculation completed. Calculation amounts, selected assets, and selected years are not sent to
-            Meta.
+            Limited app-event data sent through the Meta SDK: app launch or activation, completed registration and its
+            sign-in method, completed purchase with product identifier, amount and currency, and successful what-if
+            calculation. Whatifolio does not send the investment amount, selected asset, selected date, or calculation
+            result to Meta.
+          </li>
+          <li>
+            On iOS, the device advertising identifier (IDFA) only if you grant permission through Apple's App Tracking
+            Transparency prompt. Meta may also receive basic device, app, network, and event-delivery information as
+            part of its SDK operation.
           </li>
         </ul>
       </section>
@@ -82,11 +87,9 @@
         <p>
           Whatifolio does not use or store your name, email address, contacts, precise location, financial account
           credentials, brokerage account, bank account, or portfolio holdings. The app does not allow deposits,
-          withdrawals, trading, or brokerage activity. Whatifolio does not use collected identifiers for advertising
-          tracking or cross-app tracking. Whatifolio does not collect Apple IDFA or Android Advertising ID in the
-          current app configuration and does not request App Tracking Transparency permission on iOS. Meta App Events
-          are used to measure app-install campaigns and improve aggregate campaign optimization without enabling
-          advertising-ID collection.
+          withdrawals, trading, or brokerage activity. Whatifolio does not sell personal information. On iOS,
+          advertising tracking through the Meta SDK is enabled only if you grant permission through Apple's App
+          Tracking Transparency prompt.
         </p>
       </section>
 
@@ -107,7 +110,7 @@
           <li>To restore purchases and keep paid access in sync.</li>
           <li>To provide support when you share your in-app Support ID.</li>
           <li>To monitor reliability, protect welcome whatifs from abuse, prevent misuse, and protect the backend service.</li>
-          <li>To measure app installs and in-app campaign outcomes and improve Meta app-install campaign optimization.</li>
+          <li>To measure app-install advertising, understand whether ads lead to registrations, calculations, or purchases, and improve Meta app-install campaign optimization.</li>
         </ul>
       </section>
 
@@ -138,11 +141,28 @@
       </section>
 
       <section class="section">
+        <h2>Advertising attribution and your choices</h2>
+        <p>
+          On iOS, Whatifolio asks for permission before enabling Meta advertiser tracking. If you allow tracking, the
+          Meta SDK may use the IDFA together with limited app events to measure and optimize advertising across apps and
+          services. If you decline, Whatifolio keeps advertiser tracking disabled and does not provide the IDFA. The app
+          remains fully usable, and Apple SKAdNetwork may still provide aggregated, privacy-preserving attribution that
+          does not identify you personally.
+        </p>
+        <p>
+          You can change the iOS permission at any time in Settings &gt; Privacy &amp; Security &gt; Tracking. The Android
+          version blocks access to the Google Advertising ID; limited Meta app events may still be used for app-install
+          measurement and analytics without that identifier.
+        </p>
+      </section>
+
+      <section class="section">
         <h2>Data retention</h2>
         <p>
           We keep anonymous usage, account-link, wallet, purchase, entitlement, and technical records for as long as
           needed to operate the app, restore purchases, provide support, comply with store requirements, and protect the
-          service. Support requests should include the in-app Support ID when possible.
+          service. Support requests should include the in-app Support ID when possible. Data sent to Meta is retained
+          according to Meta's applicable retention settings and privacy terms.
         </p>
       </section>
 
