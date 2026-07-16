@@ -44,7 +44,7 @@
           calculation data to make the app work, protect welcome whatifs from abuse, restore purchases, and provide
           support.
         </p>
-        <p class="meta">Effective date: June 11, 2026</p>
+        <p class="meta">Effective date: July 16, 2026</p>
       </section>
 
       <section class="section">
@@ -68,6 +68,12 @@
           <li>Whatif wallet balance, wallet ledger activity, entitlement status, and purchase-related metadata.</li>
           <li>Network information such as IP address, used for basic anti-abuse and backend security.</li>
           <li>Basic technical logs needed to operate and protect the backend service.</li>
+          <li>
+            App Events sent to Meta Platforms, including app installation or activation, successful account
+            registration and sign-in method, successful purchase price, currency and product identifier, and whether a
+            what-if calculation completed. Calculation amounts, selected assets, and selected years are not sent to
+            Meta.
+          </li>
         </ul>
       </section>
 
@@ -77,7 +83,10 @@
           Whatifolio does not use or store your name, email address, contacts, precise location, financial account
           credentials, brokerage account, bank account, or portfolio holdings. The app does not allow deposits,
           withdrawals, trading, or brokerage activity. Whatifolio does not use collected identifiers for advertising
-          tracking or cross-app tracking.
+          tracking or cross-app tracking. Whatifolio does not collect Apple IDFA or Android Advertising ID in the
+          current app configuration and does not request App Tracking Transparency permission on iOS. Meta App Events
+          are used to measure app-install campaigns and improve aggregate campaign optimization without enabling
+          advertising-ID collection.
         </p>
       </section>
 
@@ -98,6 +107,7 @@
           <li>To restore purchases and keep paid access in sync.</li>
           <li>To provide support when you share your in-app Support ID.</li>
           <li>To monitor reliability, protect welcome whatifs from abuse, prevent misuse, and protect the backend service.</li>
+          <li>To measure app installs and in-app campaign outcomes and improve Meta app-install campaign optimization.</li>
         </ul>
       </section>
 
@@ -119,6 +129,11 @@
           <li>RevenueCat for purchase, entitlement, and whatif-pack management.</li>
           <li>Backend hosting providers for the Whatifolio API.</li>
           <li>Market data providers such as Alpha Vantage for market data snapshots.</li>
+          <li>
+            Meta Platforms for App Events, app-install attribution, campaign measurement, and campaign optimization.
+            Meta may process app and device technical information together with the limited event fields described
+            above under its own privacy terms.
+          </li>
         </ul>
       </section>
 
